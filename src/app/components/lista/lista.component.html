@@ -1,0 +1,254 @@
+<div class="container">
+  <h2 class="p-0 m-0 pt-3">Filmes Populares</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col" (click)="pegarInfFilmes(filmes[0].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ filmes[0].capa }}" class="card-img-top">
+            </div>
+          </div>
+
+          <div class="col" (click)="pegarInfFilmes(filmes[1].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ filmes[1].capa }}" class="card-img-top">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col" (click)="pegarInfFilmes(filmes[2].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ filmes[2].capa }}" class="card-img-top">
+            </div>
+          </div>
+          <div class="col" (click)="pegarInfFilmes(filmes[3].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ filmes[3].capa }}" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col" (click)="pegarInfFilmes(filmes[4].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ filmes[4].capa }}" class="card-img-top">
+            </div>
+          </div>
+          <div class="col" (click)="pegarInfFilmes(filmes[5].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ filmes[5].capa }}" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h2 class="m-0 p-0 pt-3">Séries Populares</h2>
+  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col" (click)="pegarInfSeries(series[0].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ series[0].capa }}" class="card-img-top" >
+            </div>
+          </div>
+          <div class="col" (click)="pegarInfSeries(series[1].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ series[1].capa }}" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col" (click)="pegarInfSeries(series[2].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ series[2].capa }}" class="card-img-top">
+            </div>
+          </div>
+          <div class="col" (click)="pegarInfSeries(series[3].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ series[3].capa }}" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col" (click)="pegarInfSeries(series[4].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ series[4].capa }}" class="card-img-top">
+            </div>
+          </div>
+          <div class="col" (click)="pegarInfSeries(series[5].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ series[5].capa }}" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <h2 class="m-0 p-0 pt-3">Animes Populares</h2>
+  <div id="carouselExampleControls3" class="carousel slide pb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col" (click)="pegarInfAnimes(animes[0].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ animes[0].capa }}" class="card-img-top">
+            </div>
+          </div>
+          <div class="col" (click)="pegarInfAnimes(animes[1].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ animes[1].capa }}" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col" (click)="pegarInfAnimes(animes[2].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ animes[2].capa }}" class="card-img-top">
+            </div>
+          </div>
+          <div class="col" (click)="pegarInfAnimes(animes[3].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ animes[3].capa }}" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col" (click)="pegarInfAnimes(animes[4].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ animes[4].capa }}" class="card-img-top">
+            </div>
+          </div>
+          <div class="col" (click)="pegarInfAnimes(animes[5].id)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <div class="card">
+              <img src="{{ animes[5].capa }}" class="card-img-top">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-4">
+          <img [src]="inf.capa" class="offcanvas-img ">
+        </div>
+        <div class="col-8">
+          <div class="card-body">
+            <h2 class="card-title m-0 p-0">{{ inf.nome }}</h2>
+            <div class="row">
+              <div class="col">
+                <span class="text-white-50 me-2 anos">{{ inf.lancamento }}</span>
+
+                <span *ngIf="inf.classificacao == 'L'" class="badge bg-success p-1 clf">{{ inf.classificacao }}</span>
+                <span *ngIf="inf.classificacao == '10'" class="badge bg-primary p-1 clf">{{ inf.classificacao }}</span>
+                <span *ngIf="inf.classificacao == '12'" class="badge bg-warning p-1 clf">{{ inf.classificacao }}</span>
+                <span *ngIf="inf.classificacao == '14'" class="badge bg-orange p-1 clf">{{ inf.classificacao }}</span>
+                <span *ngIf="inf.classificacao == '16'" class="badge bg-danger p-1 clf">{{ inf.classificacao }}</span>
+                <span *ngIf="inf.classificacao == '18'" class="badge bg-dark p-1 clf">{{ inf.classificacao }}</span>
+
+                <span class="text-white-50 ms-2 anos">{{ inf.duracao }}</span>
+              </div>
+              <p class="card-text mt-2">{{ inf.descricao }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 my-auto">
+        <a href="#" role="button" class="btn btn-light w-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-fill m-0 p-0" viewBox="0 0 16 16">
+            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+          </svg>
+
+          <span class="fw-bold">Assistir</span>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" role="button" class="btn w-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+          </svg>
+          <span class="text-white-50">Baixar</span>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" role="button" class="btn w-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#fff" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+          </svg>
+          <span class="text-white-50">Prévia</span>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-8">
+        <a href="#" role="button" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-info-circle me-2" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+          <span class="text-white">Mais Informações</span>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" role="button" class="btn float-end">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

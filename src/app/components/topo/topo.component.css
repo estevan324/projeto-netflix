@@ -1,0 +1,84 @@
+.container{
+  /* background-image: url('../../../assets/imgs/hacker2.jpg'); */
+  background-image: url('./../../../assets/imgs/hacker2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  height: 80%;
+}
+
+.container > * {
+  color: white;
+}
+
+a, a:visited, a:active{
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+mat-form-field{
+  background-color: #fff;
+  height: 60%;
+  padding: 0% !important;
+  margin: 0% !important;
+}
+
+mat-select{
+  background-color: #555;
+  padding: 0% !important;
+  margin: 0% !important;
+}
+
+mat-option{
+  background-color: red;
+}
+
+mat-label{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: large;
+}
+
+.back{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0px;
+}
+
+.top10{
+  background-color: red;
+  color: white;
+  width: 35px;
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 22px;
+  line-height: 15px;
+}
+
+.top10 > span{
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 2px;
+}
+
+.top4{
+  display: flex;
+  padding-top: 6%;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.spacer{
+  height: 55%;
+}
+
+small{
+  font-size: x-small;
+  padding-top: 0.1rem;
+}
+
+.menu2{
+  line-height: 17px !important;
+}

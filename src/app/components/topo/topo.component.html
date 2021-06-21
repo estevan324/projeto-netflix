@@ -1,0 +1,77 @@
+<div class="container p-3">
+  <div class="h-100">
+    <div class="row">
+      <div class="col">
+        <img src="assets/icons/logo.svg" class="w-30">
+      </div>
+      <div class="col"></div>
+      <div class="col">
+        <a href="#" class="me-3">
+          <img src="assets/icons/chromecast.svg" class="img-fluid w-20">
+        </a>
+        <a href="#" class="me-3">
+          <img src="assets/icons/search.svg" class="img-fluid w-20">
+        </a>
+        <a href="#">
+          <img src="assets/icons/person-fill.svg" class="img-fluid w-20">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 col-xs-3 d-flex justify-content-center">
+        <a href="#" class="btn">Séries</a>
+      </div>
+      <div class="col-3 col-xs-2 d-flex justify-content-center">
+        <a href="#" class="btn">Filmes</a>
+      </div>
+      <div class="col-5 col-xs-7 d-flex justify-content-center">
+        <button mat-button [matMenuTriggerFor]="menu" class="btn text-light">Categorias</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Ação</button>
+          <button mat-menu-item>Aventura</button>
+        </mat-menu>
+      </div>
+    </div>
+    <div class="row spacer"></div>
+    <div class="row">
+      <div class="col d-flex justify-content-center back">
+        <div class="top10 text-center me-2 pt-0 pb-2">
+          <span class="text-center p-0">TOP</span> 10
+        </div>
+        <div class="p-0 m-0"><span class="top4">Top 4 no Brasil hoje</span></div>
+      </div>
+    </div>
+    <div class="row back">
+      <div class="col justify-content-center">
+        <a href="#" class="btn d-block menu2" role="button">
+          <div>
+            <img src="assets/icons/plus.svg">
+          </div>
+          <small>Minha Lista</small>
+        </a>
+      </div>
+      <div class="col justify-content-center my-auto">
+        <a href="#" class="btn btn-light text-dark d-block menu2" role="button">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+              <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+            </svg>
+            <span>Assistir</span>
+          </div>
+        </a>
+      </div>
+      <div class="col justify-content-center">
+        <a href="#" class="btn d-block menu2" role="button">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg>
+          </div>
+          <small>Saiba Mais</small>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
